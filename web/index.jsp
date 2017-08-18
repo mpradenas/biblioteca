@@ -5,13 +5,20 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+ <%@include file="templates/header.jsp"%>
+ 
+       <div class="container" style="margin-top:50px">
+            <h2>Cliente</h2>
+            <form>
+              <div class="form-group">
+                  <label for="nombre" class="label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+              </div>
+             <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            
+            
+       </div>
+     
+ <%@include file="templates/footer.jsp"%>
