@@ -17,7 +17,7 @@
        
           
           <%--<link rel="stylesheet" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css">--%>
-          
+          <script type="text/javascript" src="${pageContext.request.contextPath}/javascript/jquery-3.2.1.slim.min.js"></script>
     </head>
     <body>
         
