@@ -20,5 +20,6 @@
             
             
        </div>
-     
+ 
+ <script type="text/javascript" src="javascript/cliente.js"></script>    
  <%@include file="templates/footer.jsp"%>
