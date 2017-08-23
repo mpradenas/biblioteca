@@ -1,6 +1,9 @@
 $(document).ready(function()
 {
-    alert("conectado"); 
+    $("#guarda").click(functio(){
+        
+        alert("hola");
+    });
 });
 
 
