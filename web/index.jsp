@@ -15,7 +15,7 @@
                   <label for="nombre" class="label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" placeholder="nombre">
               </div>
-              <button type="button" id="guarda"class="btn btn-primary" onclick="guardar();" >Guardar</button>
+              <button type="button" id="guarda"class="btn btn-primary">Guardar</button>
               <button type="button" class="btn btn-default" onclick="cancelar();" style="display:none" >Cancelar</button>
            
             </form>
@@ -23,5 +23,5 @@
             
        </div>
  
- <script type="text/javascript" src="javascript/cliente.js"></script>    
+ <script type="text/javascript" src="javascript/cliente.js?2"></script>    
  <%@include file="templates/footer.jsp"%>

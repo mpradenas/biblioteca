@@ -15,20 +15,22 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Cliente extends HttpServlet {
 
-    
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       if(request.getMethod().equals("POST"))
-       {
-           response.getWriter().print("hola mundo post");
-       }
-       else
-       { 
-            response.getWriter().print("hola mundo get");
-       }
-       
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
     }
 
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+         if(request.getParameter("action").equals("guardar"))
+         {
+              response.getWriter().print("guardando");
+         }
+         
+        
+    }
     @Override
     public String getServletInfo() {
         return "Short description";

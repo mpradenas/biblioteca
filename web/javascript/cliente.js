@@ -1,8 +1,18 @@
 $(document).ready(function()
 {
-    $("#guarda").click(functio(){
+    $("#guarda").click(function(){
         
-        alert("hola");
+        var nombre=$("#nombre").val();
+        $.ajax(
+        {
+            type:'POST',
+            url:'cliente',
+            data: { action:'guardar', nombre : nombre },
+            success: function(data)
+            {
+               alert(data);
+            }
+        });
     });
 });
 
